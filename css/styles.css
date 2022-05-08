@@ -1,90 +1,90 @@
 /* Imported Google Font: Dosis */
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
 
-/* These two selectors apply to the entire page */
-* {
-
-    box-sizing: border-box;
-}
-
 body {
-    min-height: 100vh;
-    margin-top: 0;
-    font-family: 'Outfit', sans-serif, 'Courier New', Courier, monospace;
+    margin: 0;
+    font-family: 'Outfit', sans-serif;
 }
 
-/* Top navigation bar */
-.topnav {
-    overflow: hidden;
-    background-color: coral;
-
+/* This container is the grid (Holygrail layout used) */
+.container {
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "nav content side"
+        "footer footer footer";
+    grid-template-columns: 200px 1fr 200px;
+    grid-template-rows: auto 1fr auto;
+    grid-gap: 10px;
+    height: 100vh;
+    background-color: #555;
 }
 
-/* Access to the navigation bar links */
-.topnav a {
-
-    float: left;
-    color: black;
+/* These class selectors are the grid items */
+.header {
+    grid-area: header;
     text-align: center;
-    padding: 15px;
+    padding: 60px;
+    font-size: 30px;
+}
+
+nav {
+    grid-area: nav;
+    margin-left: 0.5rem;
+}
+
+main {
+    grid-area: content;
+}
+
+aside {
+    grid-area: side;
+    margin-right: 0.5rem;
+}
+
+footer {
+    grid-area: footer;
+}
+
+/* This CSS will control our nav bar  */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    border: 2px black solid;
+}
+
+/* This centers the list items and puts a small border on the bottom */
+li {
+    text-align: center;
+    border-bottom: 2px #04AA6D solid;
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
     text-decoration: none;
-    font-size: 24px;
 }
 
-/* Change the color of links on hover */
-.topnav a:hover {
-    background-color: #ddd;
-    color: blue;
-}
-
-/* Adds color to the active link */
-.topnav a.active {
+/* Adding the (.active) class so the user knows which page they're on */
+li a.active {
     background-color: #04AA6D;
     color: white;
 }
 
-/* This container is for the grid */
-.container {
-    display: grid;
-    grid-template-columns: 300px 300px 300px;
-    grid-template-rows: 94px 188px 566px 71px;
-    grid-template-areas:
-        "hd hd hd hd hd hd hd hd"
-        "sd sd sd main main main main main"
-        "art art art art art art art art"
-        "ft ft ft ft ft ft ft ft";
-    grid-gap: 10px;
-    border: 2px solid yellow;
+/* This CSS declaration block will change the link color on hover */
+li a:hover {
+    background-color: #555;
+    color: white;
 }
 
-/* This box is for development purposes */
-.box {
-    border: 1px solid red;
-    background: #F8FA9D;
-}
-
-
-/* These grid area properties label the layout */
-.header {
-    grid-area: hd;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-}
-
-.article {
-    grid-area: art;
-}
-
-.sidebar {
-    grid-area: sd;
-}
-
-.content {
-    grid-area: main;
-}
-
-.footer {
-    grid-area: ft;
-}
+/* I need to learn this code (li a:hover:not(.active) {
+    background-color: #04AA6D;
+    color: white;
+}) */
