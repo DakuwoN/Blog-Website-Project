@@ -1,90 +1,21 @@
-/* Imported Google Font: Dosis */
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
-
 body {
-    margin: 0;
-    font-family: 'Outfit', sans-serif;
+    background-color: bisque;
+    font-size: 28px;
+    color: chartreuse;
 }
 
-/* This container is the grid (Holygrail layout used) */
 .container {
     display: grid;
+    width: 80vw;
+    margin: auto;
+    grid-template-columns: 35vw 35vw;
+    grid-template-rows: 45vh 45vh;
+    grid-gap: 25px;
     grid-template-areas:
-        "header header header"
-        "nav content side"
-        "footer footer footer";
-    grid-template-columns: 200px 1fr 200px;
-    grid-template-rows: auto 1fr auto;
-    grid-gap: 10px;
-    height: 100vh;
-    background-color: #555;
+        "top top"
+        "mid mid"
+        "bottom bottom";
+    border: 2px solid orange;
 }
 
-/* These class selectors are the grid items */
-.header {
-    grid-area: header;
-    text-align: center;
-    padding: 60px;
-    font-size: 30px;
-}
-
-nav {
-    grid-area: nav;
-    margin-left: 0.5rem;
-}
-
-main {
-    grid-area: content;
-}
-
-aside {
-    grid-area: side;
-    margin-right: 0.5rem;
-}
-
-footer {
-    grid-area: footer;
-}
-
-/* This CSS will control our nav bar  */
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 200px;
-    border: 2px black solid;
-}
-
-/* This centers the list items and puts a small border on the bottom */
-li {
-    text-align: center;
-    border-bottom: 2px #04AA6D solid;
-}
-
-li:last-child {
-    border-bottom: none;
-}
-
-li a {
-    display: block;
-    color: #000;
-    padding: 8px 16px;
-    text-decoration: none;
-}
-
-/* Adding the (.active) class so the user knows which page they're on */
-li a.active {
-    background-color: #04AA6D;
-    color: white;
-}
-
-/* This CSS declaration block will change the link color on hover */
-li a:hover {
-    background-color: #555;
-    color: white;
-}
-
-/* I need to learn this code (li a:hover:not(.active) {
-    background-color: #04AA6D;
-    color: white;
-}) */
+/* Finish grid setup */
