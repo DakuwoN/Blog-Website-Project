@@ -1,5 +1,7 @@
+/* Imported Google Font: Share Tech Mono */
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Share+Tech+Mono&display=swap');
 
+/* This selector controls the body of the page */
 body {
     background-color: lightcyan;
     margin: 0 auto;
@@ -7,6 +9,8 @@ body {
     font-family: 'Share Tech Mono', monospace;
 }
 
+/* GRID STARTS HERE */
+/* This controls our CSS grid */
 .container {
     display: grid;
     grid-template-columns: 30px 300px;
@@ -21,21 +25,8 @@ body {
 
 }
 
-.header-background {
-    grid-area: hd;
-    border: 2px solid green;
-    background-image: url('https://images.unsplash.com/photo-1456324463128-7ff6903988d8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-}
-
-.header-background>h1 {
-    color: black;
-    text-align: center;
-}
-
-
+/* GRID ENDS HERE */
+/* These grid-items control our grid layout */
 nav {
     grid-area: nv;
     border: 2px solid purple;
@@ -53,4 +44,64 @@ article {
 footer {
     grid-area: ft;
     border: 2px solid black;
+}
+
+/* HEADER STARTS HERE */
+/* This grid item controls our header background */
+.header-background {
+    grid-area: hd;
+    border: 2px solid green;
+    background-image: url('https://images.unsplash.com/photo-1456324463128-7ff6903988d8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+/* END OF HEADER*/
+/* This selects all h1 elements where the parent is a header-background element (Controls header text) */
+.header-background>h1 {
+    color: black;
+    text-align: center;
+}
+
+/* NAVBAR STARTS HERE */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+
+
+}
+
+li,
+a {
+    display: inline;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+
+}
+
+.nav-flexbox {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    justify-content: space-around;
+}
+
+.home-color {
+    background-color: brown;
+}
+
+.project-color {
+    background-color: chartreuse;
+}
+
+.blog-color {
+    background-color: #444;
+}
+
+.about-color {
+    background-color: antiquewhite;
 }
