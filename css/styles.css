@@ -46,6 +46,7 @@ footer {
     border: 2px solid black;
 }
 
+
 /* HEADER STARTS HERE */
 /* This grid item controls our header background */
 .header-background {
@@ -57,21 +58,31 @@ footer {
     background-position: center;
 }
 
-/* END OF HEADER*/
+
 /* This selects all h1 elements where the parent is a header-background element (Controls header text) */
 .header-background>h1 {
     color: black;
     text-align: center;
+    align-items: center;
+}
+
+/* END OF HEADER*/
+.avatar-flex {
+    display: flex;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
 }
 
 /* NAVBAR STARTS HERE */
 ul {
+    display: flex;
     list-style-type: none;
     margin: 0;
-    padding: 0;
-    text-decoration: none;
-
-
+    padding: 40px 40px;
+    justify-content: space-between;
+    font-size: 35px;
+    justify-items: center;
 }
 
 li,
@@ -83,12 +94,10 @@ a {
 
 }
 
-.nav-flexbox {
-    display: flex;
-    align-items: center;
-    font-size: 30px;
-    justify-content: space-around;
+a:hover {
+    color: hotpink;
 }
+
 
 .home-color {
     background-color: brown;
