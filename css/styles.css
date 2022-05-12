@@ -1,12 +1,18 @@
 /* Imported Google Font: Share Tech Mono */
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Share+Tech+Mono&display=swap');
 
+* {
+    box-sizing: border-box;
+}
+
 /* This selector controls the body of the page */
 body {
     background-color: lightcyan;
     margin: 0 auto;
     font-family: 'Outfit', sans-serif;
     font-family: 'Share Tech Mono', monospace;
+    min-height: 100vh;
+
 }
 
 /* GRID STARTS HERE */
@@ -116,4 +122,49 @@ a:hover {
 
 .about-color {
     background-color: antiquewhite;
+}
+
+/* THIS STARTS SECTION */
+
+.section-container {
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: mediumorchid;
+    padding: 18px;
+    border-radius: 15px;
+    text-align: center;
+    margin: 1em;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 50%;
+    border: 3px dotted;
+}
+
+.text {
+    padding: 22px 10px;
+}
+
+.text h2 {
+    padding-bottom: 15px;
+}
+
+.text p {
+    color: aquamarine;
+}
+
+/* This ENDS SECTION */
+button {
+    background-color: green;
+    cursor: pointer;
+    padding: 16px 32px;
+    display: inline-block;
+    color: darkkhaki;
+    /* Inherit did not work with shorthand */
+    font-family: inherit;
+    font-size: 18px;
 }
