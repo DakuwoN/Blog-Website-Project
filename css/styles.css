@@ -66,12 +66,15 @@ footer {
     align-items: center;
 }
 
+
+
 /* END OF HEADER*/
 .avatar-flex {
     display: flex;
     border-radius: 50%;
     width: 100px;
     height: 100px;
+    justify-content: flex-start;
 }
 
 /* NAVBAR STARTS HERE */
@@ -91,9 +94,9 @@ a {
     text-align: center;
     text-decoration: none;
     color: black;
-
 }
 
+/* NAVBAR ENDS HERE */
 a:hover {
     color: hotpink;
 }
