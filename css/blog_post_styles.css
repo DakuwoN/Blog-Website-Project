@@ -1,0 +1,87 @@
+/* Imported Google Font: Share Tech Mono */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Share+Tech+Mono&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+/* This selector controls the body of the page */
+body {
+    background-color: lightcyan;
+    margin: 0 auto;
+    font-family: 'Outfit', sans-serif;
+    font-family: 'Share Tech Mono', monospace;
+    min-height: 100vh;
+}
+
+/* HEADER STARTS HERE */
+/* This grid item controls our header background */
+.header-background {
+    grid-area: hd;
+    /* border: 2px solid green; */
+    background-image: url('https://images.unsplash.com/photo-1456324463128-7ff6903988d8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* This selects all h1 elements where the parent is a header-background element (Controls header text) */
+.header-background>h1 {
+    color: black;
+    text-align: center;
+    align-items: center;
+}
+
+
+
+/* END OF HEADER*/
+.avatar-flex {
+    display: flex;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    justify-content: flex-start;
+}
+
+/* NAVBAR STARTS HERE */
+ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 40px 40px;
+    justify-content: space-between;
+    font-size: 35px;
+    justify-items: center;
+    background-color: deeppink;
+}
+
+li,
+a {
+    display: inline;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+/* NAVBAR ENDS HERE */
+a:hover {
+    color: hotpink;
+}
+
+
+.home-color {
+    background-color: brown;
+}
+
+.project-color {
+    background-color: chartreuse;
+}
+
+.blog-color {
+    background-color: darkorange;
+}
+
+.about-color {
+    background-color: blueviolet;
+}
