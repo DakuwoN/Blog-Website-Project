@@ -5,6 +5,7 @@
     box-sizing: border-box;
 }
 
+
 /* This selector controls the body of the page */
 body {
     background-color: lightcyan;
@@ -56,6 +57,7 @@ ul {
     background-color: deeppink;
 }
 
+
 li,
 a {
     display: inline;
@@ -74,13 +76,16 @@ a:hover {
     background-color: brown;
 }
 
+
 .project-color {
     background-color: chartreuse;
 }
 
+
 .blog-color {
     background-color: darkorange;
 }
+
 
 .about-color {
     background-color: blueviolet;
@@ -109,15 +114,18 @@ header {
     border: 2px solid blue;
 }
 
+
 nav {
     grid-area: nv;
     border: 2px solid yellow;
 }
 
+
 article {
     grid-area: sd;
     border: 2px solid orange;
 }
+
 
 section {
     grid-area: sc;
@@ -125,11 +133,163 @@ section {
 }
 
 /* This content is for sidebar */
-.sidebar {
+.sidebar,
+article {
     display: flex;
     flex-direction: column;
+    background-color: coral;
 }
 
 h2 {
     text-align: center;
+}
+
+/* SIDEBAR ENDS HERE */
+
+/* SECTION STARTS HERE */
+.top-card {
+    display: flex;
+    flex-direction: column;
+    background-color: cadetblue;
+    align-items: center;
+
+}
+
+
+.img-avatar {
+    display: flex;
+    width: 100px;
+    height: fit-content;
+    flex-direction: column;
+}
+
+
+ol {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 2px solid red;
+    border-radius: 20%;
+    background-color: darkslategrey;
+
+}
+
+
+
+.social-links {
+    font-size: 30px;
+}
+
+/* SECTION ENDS HERE */
+
+/* RESPONSIVE DESIGN */
+
+/* Anything smaller than first breakpoint 600px */
+.container {
+    display: grid;
+    grid-template-columns: 120px;
+    grid-template-rows: 200px;
+    /* grid-auto-rows: minmax(100px, auto); */
+    grid-template-areas:
+        "hd hd"
+        "nv nv"
+        "sd sd";
+
+    /* border: 2px solid orange; */
+
+}
+
+/* GRID ENDS HERE */
+/* These grid-items control our grid layout */
+
+header {
+    grid-area: hd;
+    border: 2px solid blue;
+}
+
+
+nav {
+    grid-area: nv;
+    border: 2px solid yellow;
+}
+
+
+article {
+    grid-area: sd;
+    border: 2px solid orange;
+}
+
+
+section {
+    grid-area: sc;
+    border: 2px solid red;
+}
+
+
+/* Medium Screens */
+@media (min-width: 600px) and (max-width:900px) {
+    .container {
+        display: grid;
+        grid-template-columns: 30px 300px;
+        grid-template-rows: 200px 120px 1fr 60px;
+        /* grid-auto-rows: minmax(100px, auto); */
+        grid-template-areas:
+            "hd hd hd hd"
+            "nv nv nv nv"
+            "sd sd sd sd";
+        /* border: 2px solid orange; */
+
+    }
+
+    /* GRID ENDS HERE */
+    /* These grid-items control our grid layout */
+    nav {
+        grid-area: nv;
+        /* border: 2px solid purple; */
+    }
+
+    section {
+        grid-area: sc;
+        /* border: 2px solid red; */
+    }
+
+    article {
+        grid-area: sd;
+        /* border: 2px solid orange; */
+    }
+}
+
+/* LARGER SCREENS */
+@media (min-width:901px) {
+    .container {
+        display: grid;
+        grid-template-columns: 30px 300px;
+        grid-template-rows: 200px 120px 1fr 60px;
+        /* grid-auto-rows: minmax(100px, auto); */
+        grid-template-areas:
+            "hd hd hd hd hd hd hd hd"
+            "nv nv nv nv nv nv nv nv"
+            "sd sd sd sd sc sc sc sc";
+
+        /* border: 2px solid orange; */
+    }
+
+    /* GRID ENDS HERE */
+    /* These grid-items control our grid layout */
+    nav {
+        grid-area: nv;
+        /* border: 2px solid purple; */
+    }
+
+    section {
+        grid-area: sc;
+        /* border: 2px solid red; */
+    }
+
+
+    article {
+        grid-area: sd;
+        /* border: 2px solid black; */
+    }
 }

@@ -1,6 +1,7 @@
 /* Imported Google Font: Share Tech Mono */
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Share+Tech+Mono&display=swap');
 
+
 * {
     box-sizing: border-box;
 }
@@ -56,6 +57,7 @@ ul {
     background-color: deeppink;
 }
 
+
 li,
 a {
     display: inline;
@@ -74,13 +76,16 @@ a:hover {
     background-color: brown;
 }
 
+
 .project-color {
     background-color: chartreuse;
 }
 
+
 .blog-color {
     background-color: darkorange;
 }
+
 
 .about-color {
     background-color: blueviolet;
@@ -92,11 +97,13 @@ a:hover {
     display: flex;
 }
 
+
 .section-container {
     max-width: 350px;
     margin: 0 auto;
     background-color: aqua;
 }
+
 
 .card {
     background-color: grey;
@@ -107,19 +114,23 @@ a:hover {
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.62)
 }
 
+
 .card img {
     width: 100%;
     border-radius: 50%;
     border: 3px dotted;
 }
 
+
 .text {
     padding: 22px 10px;
 }
 
+
 .text h2 {
     padding-bottom: 15px;
 }
+
 
 .text p {
     color: aquamarine;
@@ -177,6 +188,7 @@ nav {
     grid-area: nv;
     /* border: 2px solid purple; */
 }
+
 
 section {
     grid-area: sc;
