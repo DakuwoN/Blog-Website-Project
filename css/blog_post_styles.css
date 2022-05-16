@@ -91,46 +91,6 @@ a:hover {
     background-color: blueviolet;
 }
 
-/* Anything smaller than first breakpoint 600px */
-.container {
-    display: grid;
-    grid-template-columns: 120px 150px;
-    grid-template-rows: 200px 120px 620px 1fr;
-    /* grid-auto-rows: minmax(100px, auto); */
-    grid-template-areas:
-        "hd hd hd hd"
-        "nv nv nv nv"
-        "sd sd sc sc";
-
-    border: 2px solid orange;
-
-}
-
-/* GRID ENDS HERE */
-/* These grid-items control our grid layout */
-
-header {
-    grid-area: hd;
-    border: 2px solid blue;
-}
-
-
-nav {
-    grid-area: nv;
-    border: 2px solid yellow;
-}
-
-
-article {
-    grid-area: sd;
-    border: 2px solid orange;
-}
-
-
-section {
-    grid-area: sc;
-    border: 2px solid red;
-}
 
 /* This content is for sidebar */
 .sidebar,
@@ -188,13 +148,13 @@ ol {
 /* Anything smaller than first breakpoint 600px */
 .container {
     display: grid;
-    grid-template-columns: 120px;
+    grid-template-columns: 250px 50px;
     grid-template-rows: 200px;
     /* grid-auto-rows: minmax(100px, auto); */
     grid-template-areas:
-        "hd hd"
-        "nv nv"
-        "sd sd";
+        "hd hd hd"
+        "nv nv nv"
+        "sd sc sc";
 
     /* border: 2px solid orange; */
 
@@ -235,9 +195,9 @@ section {
         grid-template-rows: 200px 120px 1fr 60px;
         /* grid-auto-rows: minmax(100px, auto); */
         grid-template-areas:
-            "hd hd hd hd"
-            "nv nv nv nv"
-            "sd sd sd sd";
+            "hd hd hd hd hd"
+            "nv nv nv nv nv"
+            "sd sd sc sc sc";
         /* border: 2px solid orange; */
 
     }
