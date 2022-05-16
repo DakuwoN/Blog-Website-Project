@@ -230,7 +230,7 @@ section {
         grid-template-areas:
             "hd hd hd hd hd hd hd hd"
             "nv nv nv nv nv nv nv nv"
-            "sd sd sd sd sc sc sc sc";
+            "sd sd sc sc sc sc sc sc";
 
         /* border: 2px solid orange; */
     }
