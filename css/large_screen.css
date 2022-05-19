@@ -11,14 +11,14 @@
             "sc sc sc sc sc sc sc sc"
             "ft ft ft ft ft ft ft ft";
         /* border: 2px solid orange; */
-
     }
 
+    /* GRID ENDS HERE */
     header {
         grid-area: hd;
     }
 
-    /* GRID ENDS HERE */
+
     /* These grid-items control our grid layout */
     nav {
         grid-area: nv;

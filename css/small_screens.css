@@ -13,14 +13,15 @@
         /* border: 2px solid orange; */
         font-size: 2rem;
         height: 100vh;
-
     }
+
+    /* GRID ENDS HERE */
 
     header {
         grid-area: hd;
     }
 
-    /* GRID ENDS HERE */
+
     /* These grid-items control our grid layout */
     nav {
         grid-area: nv;
