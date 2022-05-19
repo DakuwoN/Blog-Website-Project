@@ -1,87 +1,21 @@
-/* Anything smaller than first breakpoint 600px */
-.container {
-    display: grid;
-    grid-template-columns: 300px;
-    grid-template-rows: 200px;
-    /* grid-auto-rows: minmax(100px, auto); */
-    grid-template-areas:
-        "hd hd"
-        "nv nv"
-        "sc sc"
-        "ft ft";
-    /* border: 2px solid orange; */
-
-}
-
-/* GRID ENDS HERE */
-/* These grid-items control our grid layout */
-nav {
-    grid-area: nv;
-    /* border: 2px solid purple; */
-}
-
-
-section {
-    grid-area: sc;
-    /* border: 2px solid red; */
-}
-
-
-footer {
-    grid-area: ft;
-    /* border: 2px solid black; */
-}
-
-
 /* Medium Screens */
 @media (min-width: 600px) and (max-width:900px) {
     .container {
         display: grid;
-        grid-template-columns: 30px 300px;
+        grid-template-columns: 1fr;
         grid-template-rows: 200px 120px 1fr 60px;
         /* grid-auto-rows: minmax(100px, auto); */
         grid-template-areas:
-            "hd hd hd hd hd hd hd hd"
-            "nv nv nv nv nv nv nv nv"
-            "sc sc sc sc sc sc sc sc"
-            "ft ft ft ft ft ft ft ft";
+            "hd hd hd hd"
+            "nv nv nv nv"
+            "sc sc sc sc"
+            "ft ft ft ft";
         /* border: 2px solid orange; */
 
     }
 
-    /* GRID ENDS HERE */
-    /* These grid-items control our grid layout */
-    nav {
-        grid-area: nv;
-        /* border: 2px solid purple; */
-    }
-
-    section {
-        grid-area: sc;
-        /* border: 2px solid red; */
-    }
-
-
-    footer {
-        grid-area: ft;
-        /* border: 2px solid black; */
-    }
-}
-
-/* Large Screens */
-@media (min-width:901px) {
-    .container {
-        display: grid;
-        grid-template-columns: 30px 300px;
-        grid-template-rows: 200px 120px 1fr 60px;
-        /* grid-auto-rows: minmax(100px, auto); */
-        grid-template-areas:
-            "hd hd hd hd hd hd hd hd"
-            "nv nv nv nv nv nv nv nv"
-            "sc sc sc sc sc sc sc sc"
-            "ft ft ft ft ft ft ft ft";
-        /* border: 2px solid orange; */
-
+    header {
+        grid-area: hd;
     }
 
     /* GRID ENDS HERE */
