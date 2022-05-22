@@ -1,0 +1,72 @@
+@media (max-width: 600px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        /* grid-auto-rows: minmax(100px, auto); */
+        grid-template-areas:
+            "hd"
+            "nv"
+            "sd"
+            "sc";
+        /* border: 2px solid orange; */
+        font-size: 2rem;
+        grid-gap: 2em;
+        height: 100%;
+    }
+}
+
+/* These rulesets apply when the screen size is less than 600px */
+.top-card {
+
+    border: 2px dotted blue;
+}
+
+.box {
+    border: 5px;
+}
+
+
+.sidebar {
+    border-radius: 40%;
+    border: 2px solid black;
+}
+
+
+/* These rulesets end here */
+
+ol {
+    padding: 1em;
+    margin: 3em 0;
+    display: flex;
+    flex-direction: column;
+    font-size: 2em;
+}
+
+
+
+
+/* These grid-items control our grid layout */
+
+header {
+    grid-area: hd;
+    /* border: 2px solid blue; */
+}
+
+
+nav {
+    grid-area: nv;
+}
+
+
+article {
+    grid-area: sd;
+    /* border: 2px solid orange; */
+}
+
+
+section {
+    grid-area: sc;
+    /* border: 2px solid red; */
+
+}
