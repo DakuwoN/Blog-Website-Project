@@ -1,14 +1,15 @@
 /* Imported Google Font: Share Tech Mono */
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Share+Tech+Mono&display=swap');
-@import url('small_screens.css');
-@import url('medium_screen.css');
-@import url('large_screen.css');
+@import "small_screens.css" screen and (max-width: 600px);
+@import "medium_screen.css" screen and (min-width: 600px) and (max-width: 900px);
+@import "large_screen.css" screen and (min-width: 900px);
 
 
 
 * {
     box-sizing: border-box;
 }
+
 
 /* This selector controls the body of the page */
 body {
@@ -94,6 +95,8 @@ a:hover {
 .about-color {
     background-color: blueviolet;
 }
+
+
 
 /* THIS STARTS SECTION */
 

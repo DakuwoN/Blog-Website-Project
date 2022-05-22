@@ -6,33 +6,34 @@
         grid-template-rows: 200px 120px 1fr 60px;
         /* grid-auto-rows: minmax(100px, auto); */
         grid-template-areas:
-            "hd hd hd hd hd hd hd hd"
-            "nv nv nv nv nv nv nv nv"
-            "sc sc sc sc sc sc sc sc"
-            "ft ft ft ft ft ft ft ft";
+            "hd hd hd hd hd hd"
+            "nv nv nv nv nv nv"
+            "sc sc sc sc sc sc"
+            "ft ft ft ft ft ft";
+        height: 100%;
         /* border: 2px solid orange; */
     }
+}
 
-    /* GRID ENDS HERE */
-    header {
-        grid-area: hd;
-    }
-
-
-    /* These grid-items control our grid layout */
-    nav {
-        grid-area: nv;
-        /* border: 2px solid purple; */
-    }
-
-    section {
-        grid-area: sc;
-        /* border: 2px solid red; */
-    }
+/* GRID ENDS HERE */
+header {
+    grid-area: hd;
+}
 
 
-    footer {
-        grid-area: ft;
-        /* border: 2px solid black; */
-    }
+/* These grid-items control our grid layout */
+nav {
+    grid-area: nv;
+    /* border: 2px solid purple; */
+}
+
+section {
+    grid-area: sc;
+    /* border: 2px solid red; */
+}
+
+
+footer {
+    grid-area: ft;
+    /* border: 2px solid black; */
 }
